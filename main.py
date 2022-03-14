@@ -57,14 +57,19 @@ def multiplication_operation(val1,val2):
 open_calc()
 time.sleep(1)
 Result_add = add_operation(6,6)
-assert 5 + 5 == Result_add, "Wrong"
+assert 6 + 6 == Result_add, "Wrong"
 
 open_calc()
 time.sleep(1)
 Result_subtraction = subtraction_operation(9,4)
-assert 10 - 4 == Result_subtraction, "Wrong"
+assert 9 - 4 == Result_subtraction, "Wrong"
 
 open_calc()
 time.sleep(1)
 Result_multiplication = multiplication_operation(5,5)
-assert 6 * 6 == Result_multiplication, "Wrong"
+assert 5 * 5 == Result_multiplication, "Wrong"
+
+open_calc()
+time.sleep(1)
+Result_add = add_operation(8,8)
+assert 8 + 8 == Result_add, "Wrong"
