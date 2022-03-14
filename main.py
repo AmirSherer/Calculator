@@ -1,5 +1,6 @@
 import pyautogui as pag
 import time
+import pytest
 
 
 
@@ -69,7 +70,4 @@ time.sleep(1)
 Result_multiplication = multiplication_operation(5,5)
 assert 5 * 5 == Result_multiplication, "Wrong"
 
-open_calc()
-time.sleep(1)
-Result_add = add_operation(8,8)
-assert 8 + 8 == Result_add, "Wrong"
+
