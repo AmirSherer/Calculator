@@ -14,11 +14,11 @@ def open_calc():
 
 # Performing an add operation
 def add_operation(val1,val2):
-    pag.press("5")
+    pag.press("6")
     time.sleep(0.5)
     pag.press("+")
     time.sleep(0.5)
-    pag.press("5")
+    pag.press("6")
     time.sleep(0.5)
     pag.press("=")
     time.sleep(0.5)
@@ -28,9 +28,7 @@ def add_operation(val1,val2):
 
 # Performing a subtraction operation
 def subtraction_operation (val1,val2):
-    pag.press("1")
-    time.sleep(0.5)
-    pag.press("0")
+    pag.press("9")
     time.sleep(0.5)
     pag.press("-")
     time.sleep(0.5)
@@ -44,11 +42,11 @@ def subtraction_operation (val1,val2):
 
 # Performing a multiplication operation
 def multiplication_operation(val1,val2):
-    pag.press("6")
+    pag.press("5")
     time.sleep(0.5)
     pag.press("*")
     time.sleep(0.5)
-    pag.press("6")
+    pag.press("5")
     time.sleep(0.5)
     pag.press("=")
     time.sleep(1)
@@ -58,15 +56,15 @@ def multiplication_operation(val1,val2):
 
 open_calc()
 time.sleep(1)
-Result_add = add_operation(5,5)
+Result_add = add_operation(6,6)
 assert 5 + 5 == Result_add, "Wrong"
 
 open_calc()
 time.sleep(1)
-Result_subtraction = subtraction_operation(10,4)
+Result_subtraction = subtraction_operation(9,4)
 assert 10 - 4 == Result_subtraction, "Wrong"
 
 open_calc()
 time.sleep(1)
-Result_multiplication = multiplication_operation(6,6)
+Result_multiplication = multiplication_operation(5,5)
 assert 6 * 6 == Result_multiplication, "Wrong"
